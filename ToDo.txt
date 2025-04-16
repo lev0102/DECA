@@ -37,3 +37,8 @@ If you're compiling the rasterizer (with rasterizer_type: standard), you’ll al
 Install CUDA Toolkit 12.1
 
 Set CUDA_HOME in system variables
+
+
+when doing the flame download data, add wget to bash first
+
+https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058 
