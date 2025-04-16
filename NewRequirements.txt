@@ -1,0 +1,22 @@
+# DECA core dependencies
+torch==2.2.2+cu121
+torchvision==0.17.2+cu121
+torchaudio==2.2.2
+face-alignment==1.3.5
+chumpy==0.70
+scipy==1.10.1
+numpy==1.23.5
+PyYAML==6.0
+tqdm
+matplotlib
+imageio
+imageio-ffmpeg
+pytorch3d==0.7.5
+trimesh
+opencv-python
+pillow
+# optional: for interactive demo or GUI
+PyQt5
+pyqt5-tools
+# optional: for alternative face detector
+# facenet-pytorch==2.6.0  # ❌ conflict with numpy 1.23, omit if not needed

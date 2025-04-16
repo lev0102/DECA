@@ -1,0 +1,39 @@
+🟩 How to Use It on Another System
+🔧 Step-by-step:
+Install Anaconda (or Miniconda) on the new system
+
+Open terminal (or Anaconda Prompt)
+
+Create and activate a new environment:
+
+
+conda create -n deca_env python=3.8 -y
+conda activate deca_env
+Download or copy requirements.txt to that system
+
+Install everything (with GPU support):
+
+
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu121
+✅ This ensures you get the correct +cu121 builds for CUDA 12.1, compatible with your driver (even if CUDA Toolkit isn't installed).
+
+🧠 Notes
+If you don’t have GPU on the target system, replace:
+
+txt
+Copy
+Edit
+torch==2.2.2+cu121
+torchvision==0.17.2+cu121
+with:
+
+txt
+Copy
+Edit
+torch==2.2.2
+torchvision==0.17.2
+If you're compiling the rasterizer (with rasterizer_type: standard), you’ll also need to:
+
+Install CUDA Toolkit 12.1
+
+Set CUDA_HOME in system variables
